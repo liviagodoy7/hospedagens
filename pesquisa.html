@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pesquisa PHP, XAMPP e Conexão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #a51212; 
+        
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #a51212;
+        }
+        .content {
+            margin-bottom: 30px;
+        }
+        .content p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #a51212;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pesquisa PHP, XAMPP e Conexão - Livia de Godoy Carvalho</h1>
+        <p>I2P2 TB – Professor Bruno – PBE2</p>
+    </header>
+
+    <div class="container">
+        <!-- Conteúdo Principal -->
+        <div class="content">
+            <h2 class="section-title">O que significa a sigla PHP?</h2>
+            <p>PHP é um acrônimo recursivo para PHP: Hypertext Preprocessor (Pré-Processador de Hipertexto), que originalmente se chamava Personal Home Page (Página Inicial Pessoal). Ele também é um subconjunto de linguagens de scripts como JavaScript e Python. A diferença é que PHP costuma ser mais usado para comunicação do lado do servidor (back-end).</p>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Quais são as principais características da linguagem PHP?</h2>
+            <p>A linguagem PHP é voltada ao desenvolvimento de aplicações Web e, por isso, seu principal objetivo é a implementação veloz, simples e eficiente de soluções para uso em sites. Entre suas principais características estão:</p>
+            <ul>
+                <li>Velocidade e robustez no uso.</li>
+                <li>Desenvolvimento orientado a objetos.</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Quais funções básicas do PHP você conhece e utiliza em seus projetos?</h2>
+            <p>Algumas das funções mais comuns que utilizo são:</p>
+            <ul>
+                <li><code>mysqli_query($conexao, $consulta)</code> – Executa uma consulta SQL no banco de dados.</li>
+                <li><code>mysqli_connect($host, $usuario, $senha, $banco)</code> – Estabelece uma conexão com o banco de dados MySQL.</li>
+                <li><code>if, else, elseif</code> – Estruturas condicionais para tomada de decisão.</li>
+                <li><code>echo</code> e <code>print</code> – Exibem valores na tela.</li>
+                <li><code>isset()</code> – Verifica se uma variável está definida e não é null.</li>
+                <li><code>empty()</code> – Verifica se uma variável está vazia.</li>
+                <li><code>mysqli_fetch_assoc()</code> – Recupera uma linha do resultado da consulta como um array associativo.</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">O que significa a sigla XAMPP e qual é a sua principal funcionalidade?</h2>
+            <p>A sigla XAMPP significa X (cross-platform), Apache, MySQL, PHP e Perl. O XAMPP é uma distribuição de código aberto que fornece uma maneira fácil de instalar um servidor local em seu computador para desenvolvimento de aplicações web. Ele combina várias tecnologias essenciais para o desenvolvimento web, facilitando o processo de criação de ambientes de desenvolvimento sem a necessidade de configurar cada componente individualmente.</p>
+            <p>A principal funcionalidade do XAMPP é permitir que os desenvolvedores criem um ambiente de servidor local em suas máquinas de forma rápida e fácil. Ele proporciona tudo o que é necessário para desenvolver e testar aplicações web que dependem do Apache, MySQL e PHP (ou Perl), sem a necessidade de configurar manualmente cada componente.</p>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Quais componentes principais fazem parte do XAMPP? Explique a função de cada um</h2>
+            <p>Os principais componentes são:</p>
+            <ul>
+                <li><strong>Apache:</strong> Processa requisições HTTP e fornece páginas web.</li>
+                <li><strong>MySQL / MariaDB:</strong> Sistema de gerenciamento de banco de dados relacional (RDBMS).</li>
+                <li><strong>PHP:</strong> Linguagem de programação usada para criar conteúdo dinâmico para páginas web.</li>
+                <li><strong>Perl:</strong> Linguagem usada para desenvolvimento web e manipulação de texto.</li>
+                <li><strong>PhpMyAdmin:</strong> Interface gráfica para gerenciar bancos de dados MySQL/MariaDB.</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Você já configurou e utilizou o XAMPP em algum projeto? Se sim, como foi o processo?</h2>
+            <p>Sim, primeiro baixei o XAMPP no site oficial: <a href="https://www.apachefriends.org" target="_blank">https://www.apachefriends.org</a>. Escolhi a versão que correspondia ao meu sistema operacional, após o download, o instalador foi bastante simples nas etapas de instalação. Depois da instalação, abri o XAMPP Control Panel e apenas cliquei nos botões Start ao lado de "Apache" e "MySQL" para iniciar o servidor local e o banco de dados. Assim, o XAMPP forneceu um link direto para acessar o painel de controle do phpMyAdmin (para gerenciar o banco de dados) no meu navegador (http://localhost/phpmyadmin).</p>
+            <p>Dentro do phpMyAdmin, criei bancos de dados para o meu projeto. O phpMyAdmin oferece uma interface visual onde você pode criar tabelas, inserir dados e consultar o banco de dados usando SQL. Para o projeto, criei tabelas para armazenar informações, como usuários e seus dados, e comecei a interagir com elas através do PHP. Eu criei meu projeto PHP dentro da pasta htdocs (localizada dentro do diretório onde o XAMPP foi instalado) no meu caso, disco C. Dentro de htdocs, criei uma pasta para o projeto e coloquei meus arquivos PHP. Usei PHP para manipular dados do banco de dados (via MySQL), criar páginas dinâmicas e etc... Testei a aplicação no meu navegador, sempre acessando pelo endereço http://localhost.</p>
+            <p>Eu também usei o phpMyAdmin para inspecionar o banco de dados em tempo real, o que ajudou bastante na depuração do código.</p>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Quais funcionalidades do XAMPP você utiliza com mais frequência em seus projetos?</h2>
+            <p>As que eu mais utilizo em meus projetos são, o Apache, o PHP, o phpMyAdmin, o MySQL / Maria DB e o XAMPP Control Panel.</p>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">O que é uma tabela no MySQL? Explique o seu conceito e a sua importância dentro de um banco de dados.</h2>
+            <p>Uma tabela no MySQL é uma estrutura que organiza dados em linhas e colunas. Cada coluna representa um tipo específico de dado (como texto, números ou datas), e cada linha contém um conjunto de valores que correspondem às colunas da tabela. Por exemplo, em uma tabela de clientes, as colunas podem ser nome, e-mail e idade, enquanto cada linha seria um registro de cliente com seus dados. A tabela é essencial porque permite o armazenamento estruturado e eficiente das informações, além de facilitar a consulta e manipulação dos dados com comandos SQL. Ela também permite o relacionamento entre diferentes conjuntos de dados, como conectar informações de clientes com seus pedidos por meio de uma chave estrangeira.</p>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Quais são os principais tipos de dados utilizados em tabelas MySQL?</h2>
+            <p>No MySQL, os tipos de dados são usados para definir a natureza das informações que serão armazenadas em cada coluna de uma tabela. Alguns dos principais tipos de dados utilizados em tabelas MySQL são:</p>
+            <ul>
+                <li><strong>INT:</strong> Utilizado para armazenar números inteiros, como idades ou quantidades.</li>
+                <li><strong>VARCHAR:</strong> Usado para armazenar strings de texto de comprimento variável. Ideal para armazenar nomes, e-mails, endereços, etc.</li>
+                <li><strong>TEXT:</strong> Semelhante ao VARCHAR, mas usado para armazenar textos mais longos, como descrições ou comentários.</li>
+                <li><strong>DATE:</strong> Armazena datas no formato 'YYYY-MM-DD', como datas de nascimento ou de criação de registros.</li>
+                <li><strong>DATETIME:</strong> Armazena data e hora, no formato 'YYYY-MM-DD HH:MM:SS', usado quando é necessário registrar informações com precisão de data e hora.</li>
+                <li><strong>DECIMAL:</strong> Usado para armazenar números decimais com precisão exata, como valores monetários.</li>
+                <li><strong>FLOAT e DOUBLE:</strong> Usados para armazenar números de ponto flutuante.</li>
+                <li><strong>BOOLEAN:</strong> Armazena valores booleanos, representando verdadeiro ou falso (1 ou 0).</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">O que é uma chave primária (Primary Key) em uma tabela do MySQL? Qual a sua importância?</h2>
+            <p>Uma chave primária (Primary Key) em uma tabela MySQL é uma coluna (ou um conjunto de colunas) que serve para identificar de forma única cada registro dentro da tabela. Ela garante que cada linha na tabela tenha um valor exclusivo e não nulo, o que impede que existam registros duplicados.</p>
+            <p>A importância da chave primária está na sua capacidade de garantir a unicidade dos dados e ajudar na eficiência das consultas. Ela facilita a indexação, o que melhora a performance ao buscar ou alterar registros. Além disso, a chave primária é essencial para estabelecer relacionamentos entre tabelas, já que outras tabelas podem referenciar a chave primária através de uma chave estrangeira (Foreign Key), criando vínculos entre dados em diferentes tabelas.</p>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Como você faria a conexão com um banco de dados MySQL utilizando PHP?</h2>
+            <p>A conexão com o banco de dados MySQL pode ser feita utilizando a função <code>mysqli_connect()</code>, como segue:</p>
+            <pre><code>
+$conexao = mysqli_connect("localhost", "usuario", "senha", "banco_de_dados");
+if (!$conexao) {
+    die("Falha na conexão: " . mysqli_connect_error());
+}
+            </code></pre>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Você sabe como executar consultas SQL a partir de um script PHP? Se sim, explique como você faria isso. Quais comandos SQL você já utilizou para manipular dados no MySQL? Descreva como os utilizou.</h2>
+            <p>Sim, eu sei como executar consultas SQL a partir de um script PHP. Primeiro criei a conexão com o banco de dados, escrevi a consulta SQL, e executei essa consulta.</p>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Quais desafios você encontrou ao trabalhar com PHP e XAMPP em seus projetos?</h2>
+            <p>Não tive grandes dificuldades
